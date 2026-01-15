@@ -1,16 +1,101 @@
-# React + Vite
+# 🎨 React Color Changer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that changes the background color of the screen when a color button is clicked.  
+This project demonstrates **useState**, **props**, and **component-based design** in React.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 🎯 Dynamic background color change
+- ⚛️ React `useState` for state management
+- 🧩 Reusable `Color` component
+- 🖱️ Click-based interaction
+- 🧼 Clean and beginner-friendly code
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React**
+- **JavaScript (ES6)**
+- **CSS**
+- **Vite** (or Create React App)
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+│── App.jsx
+│── Color.jsx
+│── App.css
+│── main.jsx
+```
+
+---
+
+## ⚙️ How It Works
+
+- `useState` is defined in **App.jsx**
+- The `setColor` function is passed to `Color.jsx` as a prop
+- Clicking a color button updates the background color of the screen
+
+---
+
+## 🧠 Example Code
+
+### App.jsx
+```jsx
+const [colour, setColor] = useState("white");
+```
+
+### Color.jsx
+```jsx
+<button onClick={() => setColor(name.toLowerCase())}>
+  {name}
+</button>
+```
+
+---
+
+## ▶️ How to Run Locally
+
+```bash
+git clone https://github.com/your-username/react-color-changer.git
+cd react-color-changer
+npm install
+npm run dev
+```
+
+---
+
+## 📸 Preview
+
+<video width="400" controls autoplay muted loop>
+  <source src="BG-color.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+---
+
+## 📚 What I Learned
+
+- React state management using `useState`
+- Passing data via props
+- Handling events in React
+- Component reusability
+
+---
+
+## Nevid
+ 
+CSE (AI/ML) Student  
+Learning React & Frontend Development
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
