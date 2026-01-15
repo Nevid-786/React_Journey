@@ -15,6 +15,7 @@ function App() {
       <Color name="Black" setColor={setColor}/>
 
       <Color name="orange" setColor={setColor}/>
+      <Color name="pink" setColor={setColor}/>
     </div>
 
     </div>
