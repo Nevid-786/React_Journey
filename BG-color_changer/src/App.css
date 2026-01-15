@@ -1,0 +1,44 @@
+
+
+#root {
+ width:100vw;
+ height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+.screen{
+   width:100vw;
+ height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.colorBox{
+padding:8px;
+height: 20px;
+width: 50px;
+text-align: center;
+border-radius: 40px;
+color:white;
+
+}
+.colorBox:active{
+  transform: scale(1.1);
+}
+.panel {
+  position:absolute;
+  bottom: 100px;
+  background-color: white;
+  color:black;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4px;
+  height: 50px;
+  width:500px;
+  border-radius: 40px;
+}
+
